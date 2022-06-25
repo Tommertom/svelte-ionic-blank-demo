@@ -1,0 +1,48 @@
+{
+  "name": "ionicsvelte",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && vite build --ssr",
+    "build:client": "vite build",
+    "build:server": "vite build  --ssr",
+    "preview": "vite preview",
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "routes": "routify",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.5",
+    "@rollup/plugin-alias": "^3.1.9",
+    "@roxi/routify": "^3.0.0-next.93",
+    "@storybook/addon-actions": "^6.5.9",
+    "@storybook/addon-essentials": "^6.5.9",
+    "@storybook/addon-interactions": "^6.5.9",
+    "@storybook/addon-links": "^6.5.9",
+    "@storybook/builder-vite": "^0.1.36",
+    "@storybook/svelte": "^6.5.9",
+    "@storybook/testing-library": "^0.0.13",
+    "@sveltejs/vite-plugin-svelte": "^1.0.0-next.30",
+    "@tsconfig/svelte": "^2.0.1",
+    "babel-loader": "^8.2.5",
+    "sass": "^1.52.2",
+    "spank": "^2.0.0-5",
+    "svelte": "^3.48.0",
+    "svelte-check": "^2.2.7",
+    "svelte-loader": "^3.1.3",
+    "svelte-preprocess": "^4.9.8",
+    "tslib": "^2.3.1",
+    "typescript": "^4.5.4",
+    "vite": "^2.9.9",
+    "vite-plugin-pwa": "^0.12.0"
+  },
+  "dependencies": {
+    "@ionic/core": "^6.1.8"
+  },
+  "routify": {
+    "pages": "./src/routes"
+  }
+}
