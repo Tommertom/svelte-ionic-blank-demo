@@ -7,7 +7,7 @@
 </p>
 <br>
 <p align="center">
-  A showcase app for all Ionic UI elements. Supercharged by Svelte and Vite
+  A showcase app for Ionic. Supercharged by Svelte and Vite.
 </p>
 <br>
 <p align="center">
