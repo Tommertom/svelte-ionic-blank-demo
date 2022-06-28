@@ -48,5 +48,5 @@ The following derived stores are implemented:
 
 All these props are also available via the `pwaStatusStream` readable store.
 
-# Issues - work in progress
+# Issues - work in progress and acknowledgments
 Please refer to the README on the main repo - https://github.com/Tommertom/svelte-ionic-app
