@@ -28,7 +28,7 @@ npm i
 npm run dev
 ```
 
-## Other starters
+## All starters
 
 * Blank demo - https://github.com/Tommertom/svelte-ionic-blank-demo
 * Tabs demo - https://github.com/Tommertom/svelte-ionic-tabs-demo
