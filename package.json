@@ -10,8 +10,7 @@
     "build:server": "vite build  --ssr",
     "preview": "vite preview",
     "check": "svelte-check --tsconfig ./tsconfig.json",
-    "routes": "routify",
-    "doctoc": "doctoc README.md"
+    "routes": "routify"
   },
   "devDependencies": {
     "@rollup/plugin-alias": "^3.1.9",
