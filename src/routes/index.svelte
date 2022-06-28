@@ -8,13 +8,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content fullscreen="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
+<ion-content fullscreen="true" class="ion-padding">
   <div id="container">
     <strong>Ready to create an app?</strong>
     <p>

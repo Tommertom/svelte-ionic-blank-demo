@@ -1,29 +1,46 @@
-# Ionic Svelte PWA starter
-A starter app for all Ionic UI elements - up to Ionic 6!!! 
 
-Easy documentation for svelte & Ionic published as web app: https://ionicsvelte.firebaseapp.com
-e console.log*
+<h1 align="center"> Ionic Svelte Demo - BLANK</h1> <br>
+<p align="center">
+  <a href="https://ionicsvelte.firebaseapp.com">
+    <img alt="IonicSvelte" title="IonicSvelte" src="https://github.com/Tommertom/svelte-ionic-app/raw/master/src/static/assets/ionicsvelte_logo.png" width="350">
+  </a>
+</p>
+<br>
+<p align="center">
+  A showcase app for all Ionic UI elements. Supercharged by Svelte and Vite
+</p>
+<br>
+<p align="center">
+  <a href="https://ionicsvelte.firebaseapp.com">
+    <img alt="Download as PWA" title="PWA power" src="https://github.com/Tommertom/svelte-ionic-app/raw/master/src/static/assets/img/pwa-download.png" width="140"  target="_blank">
+  </a>
+</p>
+<br>
 
-Features
-- Use all Ionic 6 UI elements
-- Fast bundler using VITE
-- Ease PWA configuration with good documentation - using zero-config Vite (https://vite-plugin-pwa.netlify.app/)
-- Deployable as PWA.
-- File based router (using Roxy/Routify)
+# Ionic Svelte Blank starter
+A starter app for all Ionic UI elements - based on Ionic's Blank Starter
 
-* https://github.com/Tommertom/svelte-ionic-app/tree/1.BlankStarter - Ionic's blank starter
-
-
-Install this branch:
+Install this starter:
 ```bash
-git clone --single-branch --branch 1.BlankStarter https://github.com/Tommertom/svelte-ionic-app.git
-cd svelte-ionic-app
+git clone https://github.com/Tommertom/svelte-ionic-blank-demo.git 
+cd svelte-ionic-blank-demo
 npm i
 npm run dev
 ```
-  
 
-# PWA Interface - easing the PWA work in your app
+## Other starters
+
+* Blank demo - https://github.com/Tommertom/svelte-ionic-blank-demo
+* Tabs demo - https://github.com/Tommertom/svelte-ionic-tabs-demo
+* Sidemenu demo - https://github.com/Tommertom/svelte-ionic-sidemenu-demo
+* Mystarter demo - taking photo with Capacitor - https://github.com/Tommertom/svelte-ionic-mystarter-demo
+* List demo - https://github.com/Tommertom/svelte-ionic-list-demo
+* Conference demo - https://github.com/Tommertom/svelte-ionic-conference-demo
+
+And the official demo app - https://github.com/Tommertom/svelte-ionic-app
+
+  
+## PWA Interface - easing the PWA work in your app
 To help you managing state of the service worker and the various events, a simple svelte store is provided for (`lib/pwa.ts`). This store wraps the various events of the service worker in a readable store and a number of derived stores so you can easily listen to various events.
 
 While most tutorials provide you the basics to do all these separately and in an "Hello world" fashion, having all in a store helps wiring things up to the UI across various places in the code. 

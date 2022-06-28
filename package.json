@@ -11,7 +11,7 @@
     "preview": "vite preview",
     "check": "svelte-check --tsconfig ./tsconfig.json",
     "routes": "routify",
-    "storybook": "start-storybook -p 6006",
+    "doctoc": "doctoc README.md",
     "build-storybook": "build-storybook"
   },
   "devDependencies": {
