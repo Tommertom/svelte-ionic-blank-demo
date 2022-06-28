@@ -56,6 +56,4 @@ The following derived stores are implemented:
 All these props are also available via the `pwaStatusStream` readable store.
 
 # Issues - work in progress
-- Ion Icons implementation will not support md and ios specific icons etc (yet) - name prop does not function - also happening in Vue/React.Similar icon issues arise with other component that can digest custom icons (to check)
-- A IonFooter in a Modal gives weird layout - not happening in Angular, so a thing related to this implementation
-- Adding custom class to Modal/Popover does not work (using controller) - using inline is probably better
+Please refer to the README on the main repo - https://github.com/Tommertom/svelte-ionic-app
