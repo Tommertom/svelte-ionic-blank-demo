@@ -10,13 +10,6 @@
   A showcase app for Ionic. Supercharged by Svelte and Vite.
 </p>
 <br>
-<p align="center">
-  <a href="https://ionicsvelte.firebaseapp.com">
-    <img alt="Download as PWA" title="PWA power" src="https://github.com/Tommertom/svelte-ionic-app/raw/master/src/static/assets/img/pwa-download.png" width="140"  target="_blank">
-  </a>
-</p>
-<br>
-
 # Ionic Svelte Blank starter
 A starter app for all Ionic UI elements - based on Ionic's Blank Starter
 
