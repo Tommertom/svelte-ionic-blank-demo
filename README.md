@@ -2,7 +2,7 @@
 <h1 align="center"> Ionic Svelte Demo - BLANK</h1> <br>
 <p align="center">
   <a href="https://ionicsvelte.firebaseapp.com">
-    <img alt="IonicSvelte" title="IonicSvelte" src="https://github.com/Tommertom/svelte-ionic-app/raw/master/src/static/assets/ionicsvelte_logo.png" width="350">
+    <img alt="IonicSvelte" title="IonicSvelte" src="https://github.com/Tommertom/svelte-ionic-app/raw/master/src/static/assets/svelte-ionic-vite.png" width="350">
   </a>
 </p>
 <br>
