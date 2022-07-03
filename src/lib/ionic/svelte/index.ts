@@ -1,5 +1,6 @@
 
-import type {
+import {
+  menuController,
   // TYPES
   MenuI, ModalOptions,
 } from "@ionic/core";
@@ -156,12 +157,13 @@ export const setupIonicSvelte = async (config?: IonicConfig) => {
   }
 };
 
-export const getIonicNav = () => {
-  return document.querySelector("ion-nav");
-};
-
-export const getIonicMenu = (menuId): MenuI => {
+export const registerMenu = (menuId: string): boolean => {
   const query = "ion-menu[menu-id='" + menuId + "']";
-  return document.querySelector(query) as unknown as MenuI;
-};
+  const menu = document.querySelector(query) as unknown as MenuI;
+
+  if (menu) {
+    menuController._register(menu);
+  }
+  return !!menu;
+}
 

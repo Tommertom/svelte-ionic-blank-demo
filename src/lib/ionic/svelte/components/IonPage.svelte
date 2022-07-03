@@ -38,6 +38,14 @@
     ionViewDidLeave();
     if (pageHooks_onIonViewDidLeave[route]) pageHooks_onIonViewDidLeave[route]();
   });
+
+  /*
+  <main in:fly={{ x: 100, duration: 250 }}>
+ <slot />
+</main>
+
+This clips the content - found when migrating Conference starter.
+  */
 </script>
 
 <main in:fly={{ x: 100, duration: 250 }}>

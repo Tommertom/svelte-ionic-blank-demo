@@ -22,38 +22,42 @@ const emptyStatus: PWAStatus = {
 export const pwaStatusStream = readable(emptyStatus, (set) => {
     let status: PWAStatus = emptyStatus;
 
-    const updateSWObject = registerSW({
-        onNeedRefresh() {
-            //    console.log('PWA App needs refresh');
-            status.needRefresh = true;
-            status.updateFunction = updateSWObject;  // use updateFunction() to update
-            set(status);
-        },
-        onOfflineReady() {
-            //  console.log('PWA Offline ready');
-            status.offlineReady = true;
-            set(status);
-        },
-        onRegisterError(error) {
-            //  console.log('PWA error', error);
-            status.registerError = error;
-            set(status);
-        },
-        onRegistered(registration) {
-            //  console.log('PWA registration', registration);
-            status.registration = registration;
-            set(status);
-        }
-    })
+    if (typeof navigator !== "undefined") {
+        const updateSWObject = registerSW({
+            onNeedRefresh() {
+                //    console.log('PWA App needs refresh');
+                status.needRefresh = true;
+                status.updateFunction = updateSWObject;  // use updateFunction() to update
+                set(status);
+            },
+            onOfflineReady() {
+                //  console.log('PWA Offline ready');
+                status.offlineReady = true;
+                set(status);
+            },
+            onRegisterError(error) {
+                //  console.log('PWA error', error);
+                status.registerError = error;
+                set(status);
+            },
+            onRegistered(registration) {
+                //  console.log('PWA registration', registration);
+                status.registration = registration;
+                set(status);
+            }
+        })
+    }
+
     const beforeinstallpromptHandler = (e) => {
         //  console.log('PWA beforeinstallprompt fired', e)
         status.beforeInstallPrompt = e;
         set(status);
     }
-    window.addEventListener("beforeinstallprompt", beforeinstallpromptHandler);
+
+    if (typeof window !== "undefined") window.addEventListener("beforeinstallprompt", beforeinstallpromptHandler);
     // destructor
     return () => {
-        window.removeEventListener("beforeinstallprompt", beforeinstallpromptHandler);
+        if (typeof window !== "undefined") window.removeEventListener("beforeinstallprompt", beforeinstallpromptHandler);
     }
 })
 
