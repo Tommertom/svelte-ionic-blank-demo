@@ -20,6 +20,18 @@ cd svelte-ionic-blank-demo
 npm i
 npm run dev
 ```
+## Screenshots
+<table>
+  <tr>
+    <th>iPhone SE</th>
+    <th>Samsung S8+</th>
+  </tr>
+  <tr>
+    <td>
+<img alt="IonicSvelte" title="IonicSvelte" src="screenshots/localhost_3000_tabs_tab1(iPhone SE).png" width="65%" ></td>
+    <td><img alt="IonicSvelte" title="IonicSvelte" src="screenshots/localhost_3000_tabs_tab1(Samsung Galaxy S8+).png" width="45%"></td>
+  </tr>
+</table>
 
 ## All starters
 
