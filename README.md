@@ -48,5 +48,8 @@ The following derived stores are implemented:
 
 All these props are also available via the `pwaStatusStream` readable store.
 
+## Roxi Routify 3
+This code uses Roxi's newest version of its router. See https://v3.ci.routify.dev/docs#guide to know more. By the time of this writing, this is actually still in beta. If you want to change router, please make sure you change the hooks in IonPage.svelte (part of `$ionic/svelte/components/IonPage.svelte`).
+
 # Issues - work in progress and acknowledgments
 Please refer to the README on the main repo - https://github.com/Tommertom/svelte-ionic-app
