@@ -7,6 +7,7 @@ export interface PWAStatus {
     registerError: any
     registration: ServiceWorkerRegistration;
     beforeInstallPrompt: any; // BeforeInstallPromptEvent ??
+    canInstall: boolean;
     updateFunction: any;
 }
 
@@ -16,6 +17,7 @@ const emptyStatus: PWAStatus = {
     registerError: undefined,
     registration: undefined,
     beforeInstallPrompt: undefined,
+    canInstall: false,
     updateFunction: undefined
 }
 
@@ -51,6 +53,7 @@ export const pwaStatusStream = readable(emptyStatus, (set) => {
     const beforeinstallpromptHandler = (e) => {
         //  console.log('PWA beforeinstallprompt fired', e)
         status.beforeInstallPrompt = e;
+        status.canInstall = true;
         set(status);
     }
 
@@ -66,5 +69,7 @@ export const pwaOfflineReady = derived(pwaStatusStream, (updateObject) => update
 export const pwaRegisterError = derived(pwaStatusStream, (updateObject) => updateObject.registerError);
 export const pwaRegistration = derived(pwaStatusStream, (updateObject) => updateObject.registration);
 export const pwaBeforeInstallPrompt = derived(pwaStatusStream, (updateObject) => updateObject.beforeInstallPrompt);
+export const canInstall = derived(pwaStatusStream, (updateObject) => updateObject.canInstall);
 export const pwaUpdateObject = derived(pwaStatusStream, (updateObject) => updateObject.updateFunction);
 export const pwaHasUpdate = derived(pwaStatusStream, (updateObject) => updateObject.updateFunction !== undefined);
+

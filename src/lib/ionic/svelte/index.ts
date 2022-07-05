@@ -138,8 +138,6 @@ export {
   getTimeGivenProgression,
 } from "@ionic/core/components";
 
-export * from "./ion-router/ion-router-hooks.js";
-
 export * from "./controllers";
 
 export * from "./platform";
