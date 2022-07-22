@@ -1,12 +1,9 @@
 
-import {
-  menuController,
-  // TYPES
-  MenuI, ModalOptions,
-} from "@ionic/core";
+import { menuController } from "@ionic/core";
 
-import { IonicConfig, initialize } from "@ionic/core/components";
-import type { SvelteComponent } from "svelte";
+import { initialize } from "@ionic/core/components";
+import type { IonicConfig, MenuI } from "@ionic/core/components";
+
 import { defineIonComponents } from "./components/defineComponents.js";
 
 // all exports

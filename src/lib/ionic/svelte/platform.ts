@@ -1,5 +1,5 @@
 import { config } from '@ionic/core/dist/collection/global/config'
-import { readable, derived } from 'svelte/store';
+import { readable } from 'svelte/store';
 
 let _win: Window;
 let _doc: Document;

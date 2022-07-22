@@ -1,9 +1,8 @@
 
+import type { ModalOptions, PopoverOptions } from "@ionic/core"
 import {
     modalController as modalControllerOrg,
-    ModalOptions,
     popoverController as popoverControllerOrg,
-    PopoverOptions
 } from "@ionic/core";
 
 import type { SvelteComponent } from "svelte";
