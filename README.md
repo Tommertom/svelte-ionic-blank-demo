@@ -2,7 +2,7 @@
 <h1 align="center"> Ionic Svelte Demo - BLANK</h1> <br>
 <p align="center">
   <a href="https://ionicsvelte.firebaseapp.com">
-    <img alt="IonicSvelte" title="IonicSvelte" src="https://github.com/Tommertom/svelte-ionic-app/raw/main/src/static/assets/svelte-ionic-vite.png" width="350">
+    <img alt="IonicSvelte" title="IonicSvelte" src="https://github.com/Tommertom/svelte-ionic-app/raw/main/src/static/assets/svelte-ionic-logo.png" width="350">
   </a>
 </p>
 <br>
@@ -20,7 +20,8 @@ cd svelte-ionic-blank-demo
 npm i
 npm run dev
 ```
-
+Online playground - https://codesandbox.io/s/github/Tommertom/svelte-ionic-blank-demo
+When using the online playground - make sure you pop-out the render window to see the demo in full size.
 
 ## Screenshots
 <table>
@@ -35,14 +36,42 @@ npm run dev
   </tr>
 </table>
 
-## All starters
+## All starters - how to get started quickly!
+If you want to get started with Ionic, Svelte and Vite, just use one of the starters:
 
-* Blank demo - https://github.com/Tommertom/svelte-ionic-blank-demo
-* Tabs demo - https://github.com/Tommertom/svelte-ionic-tabs-demo
-* Sidemenu demo - https://github.com/Tommertom/svelte-ionic-sidemenu-demo
-* Mystarter demo - taking photo with Capacitor - https://github.com/Tommertom/svelte-ionic-mystarter-demo
-* List demo - https://github.com/Tommertom/svelte-ionic-list-demo
-* Conference demo - https://github.com/Tommertom/svelte-ionic-conference-demo
+* Blank demo 
+  - https://github.com/Tommertom/svelte-ionic-blank-demo
+  - `npx degit Tommertom/svelte-ionic-blank-demo svelte-ionic-blank-demo`
+  - Online playground - https://codesandbox.io/s/github/Tommertom/svelte-ionic-blank-demo
+
+* Tabs demo 
+  - https://github.com/Tommertom/svelte-ionic-tabs-demo
+  - `npx degit Tommertom/svelte-ionic-tabs-demo svelte-ionic-tabs-demo`
+  - Online playground - https://codesandbox.io/s/github/Tommertom/svelte-ionic-tabs-demo
+
+* Sidemenu demo 
+  - https://github.com/Tommertom/svelte-ionic-sidemenu-demo
+  - `npx degit Tommertom/svelte-ionic-sidemenu-demo svelte-ionic-sidemenu-demo`
+  - Online playground - https://codesandbox.io/s/github/Tommertom/svelte-ionic-sidemenu-demo
+
+* Mystarter demo - taking photo with Capacitor 
+  - https://github.com/Tommertom/svelte-ionic-mystarter-demo
+  - `npx degit Tommertom/svelte-ionic-mystarter-demo svelte-ionic-mystarter-demo`
+  - Online playground - https://codesandbox.io/s/github/Tommertom/svelte-ionic-mystarter-demo
+
+* List demo 
+  - https://github.com/Tommertom/svelte-ionic-list-demo
+  - `npx degit Tommertom/svelte-ionic-list-demo svelte-ionic-list-demo`
+  - Online playground - https://codesandbox.io/s/github/Tommertom/svelte-ionic-list-demo
+
+* Conference demo - (sort of...check its README) 
+  - https://github.com/Tommertom/svelte-ionic-conference-demo
+  - `npx degit Tommertom/svelte-ionic-conference-demo svelte-ionic-conference-demo`
+  - Online playground - https://codesandbox.io/s/github/Tommertom/svelte-ionic-conference-demo
+
+When using the online playground - make sure you pop-out the render window to see the demo in full size.
+
+Would you like to start any of the above in your favorite framework (React, Vue or Angular), just use the Ionic CLI to start the app: `ionic start --type=angular|vue|react`. Ionic CLI is easy to install: `npm i -g @ionic/cli`. https://ionicframework.com/docs/cli/commands/start.
 
 And the official demo app - https://github.com/Tommertom/svelte-ionic-app
 
